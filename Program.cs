@@ -167,3 +167,144 @@
 //Console.WriteLine(Sum(numbers1));2
 //Console.WriteLine(Sum(numbers2)); 
 
+//задание 1
+//тест:
+//1. ничего
+//2. void ShowWelcomeMessage()
+//3.Метод вызовет ошибку компиляции / Метод выполнится с значениями по умолчанию
+//4.void PrintNumber(int number)
+//5. ничего, там все с ошибками
+//задание 2
+//string GreetUser(string name)
+//{
+//    Console.WriteLine($"Привет, {name}! Добро пожаловать в программу!");
+//    return name;
+//}
+//GreetUser("dan");
+//задание 3
+//int AddNumbers(int a , int b)
+//{
+//    return a + b;
+//}
+//Console.WriteLine(AddNumbers(5, 12)); 
+//задание 4
+//bool isEven(int a)
+//{
+//    return a % 2 == 0;
+//}
+//Console.WriteLine(isEven(6)); 
+//задание 5
+//int FindMax(int[] arr)
+//{
+//    int max = arr[0];
+//    for(int i = 1; i < arr.Length; i++)
+//    {
+//        if (arr[i] > max) { max = arr[i];}
+//    }
+//    return max;
+//}
+//Console.WriteLine(FindMax([1,52,13,24,35]));
+//задание 6
+//double ConvertCelsiusToFahrenheit(int C)
+//{
+//    return C * 9 / 5 + 32;
+
+//}
+//Console.WriteLine(ConvertCelsiusToFahrenheit(5)); 
+//задание 7
+//int CountVowels(string str)
+//{
+//    string vowels = "aeiou";
+//    int count = 0;
+//    foreach (char ch in str)
+//    {
+//        if (vowels.Contains(ch)) count++;
+//    }
+//    return count;
+//}
+//Console.WriteLine(CountVowels("afbfdgdfgrtqreofsa")); 
+//задание 8
+
+//string GeneratePassword(int lenght)
+//{
+//    string chars = "abcdefghiklmnoprstqstuvwxyzABCDEFGHIKLMNOPRSTUVWXYZ1234567890";
+//    Random rand = new Random();
+//    char[] pass = new char[lenght];
+//    for(int i = 0; i < lenght; i++)
+//    {
+//        pass[i] = chars[rand.Next(chars.Length)];
+//    }
+//    return new string(pass);
+//}
+//Console.WriteLine($"Password: {GeneratePassword(10)}"); 
+//задание 9
+//bool IsPalindrome(string str)
+//{
+//    string reversed = new string(str.Reverse().ToArray());
+//    return str == reversed;
+//}
+//Console.WriteLine(IsPalindrome("шалаш"));
+//задание 10
+//int[] ReverseArray(int[] arr)
+//{
+//    int[] reversed = new int[arr.Length];
+//    for(int i  = 0; i < arr.Length; i++)
+//    {
+//        reversed[i] = arr[arr.Length - 1 - i];
+//    }
+
+//    return reversed;
+//}
+//int[] reversed = ReverseArray(new int[] { 1, 2, 3, 4, 5 });
+//Console.WriteLine(string.Join(',',reversed));
+//задание 11
+//int AddNums(int a = 2, int b = 3)
+//{
+//    return a + b;
+//}
+//int SubNums(int a = 2, int b = 3)
+//{
+//    return a - b;
+//}
+//int MultiNums(int a = 2, int b = 3)
+//{
+//    return a * b;
+//}
+//int DivNums(int a = 2, int b = 3)
+//{
+//    return a / b;
+//}
+//void Calc()
+//{
+//    Console.WriteLine("Выберите операцию:\n1. Сложение\n2. Вычитание\n3. Умножение\n4. Деление\n");
+//    int pick = int.Parse(Console.ReadLine());
+//    switch(pick)
+//    {
+//        case 1: Console.WriteLine($"Результат сложения 2 + 3 = {AddNums()}"); break;
+//        case 2: Console.WriteLine($"Результат вычитания 2 - 3 = {SubNums()}"); break;
+//        case 3: Console.WriteLine($"Результат умножения 2 * 3 = {MultiNums()}"); break;
+//        case 4: Console.WriteLine($"Результат деления 2 / 3 = {DivNums()}"); break;
+//    }
+//}
+//Calc();
+//задание 12
+//bool isPrime(int num)
+//{
+//    if (num <= 1) return false;
+//    for (int i = 2; i < num; i++)
+//    {
+//        if (num % i == 0) { return false; }
+//    }
+//    return true;
+//}
+//void PrimePrimesUpTo(int n)
+//{
+//    for(int i = 0; i < n; i++)
+//    {
+//        if (isPrime(i))
+//        {
+//            Console.Write($" {i}");
+//        }
+//    }
+//}
+//PrimePrimesUpTo(17);
