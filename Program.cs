@@ -120,13 +120,50 @@
 //string currentWeather = GetWeather();
 //Console.WriteLine($"Погода на сегодня: {currentWeather}");
 //ShowGoodbyeMsg();
-int Factorial(int n)
-{
-    if (n == 1) return 1;
-    return n * Factorial(n - 1);
-}
-int fact1 = Factorial(1);
-int fact2 = Factorial(4);
-int fact3 = Factorial(25);
-Console.WriteLine($"Факториал числа 1: {fact1}\nФакториал числа 4: {fact2}\nФакториал числа 25: {fact3}");
+//int Factorial(int n)
+//{
+//    if (n == 1) return 1;
+//    return n * Factorial(n - 1);
+//}
+//int fact1 = Factorial(1);
+//int fact2 = Factorial(4);
+//int fact3 = Factorial(25);
+//Console.WriteLine($"Факториал числа 1: {fact1}\nФакториал числа 4: {fact2}\nФакториал числа 25: {fact3}");
+//void Compare(int[] numbers1, int[] numbers2)
+//{
+//    int numbers1Sum = 0;
+//    int numbers2Sum = 0;
+//    foreach (int number in numbers1) numbers1Sum += number;
+//    foreach (int number in numbers2) numbers2Sum += number;
+//    if (numbers1Sum > numbers2Sum) Console.WriteLine("сумма чисел из массива numbers1 больше");
+//    else if (numbers1Sum < numbers2Sum) Console.WriteLine("сумма чисел из массива numbers2 больше");
+//    else Console.WriteLine("суммы чисел обоих массивов равны");
+//    int Sum(int[] numbers)
+//    {
+//        int res = 0;
+//        foreach(int number in numbers) res += number;
+//        return res;
+//    }
+//}
+//int[] numbers1 = [1, 2, 3];
+//int[] numbers2 = [4, 5, 6];
+//Compare(numbers1, numbers2);
+//int Sum(int[] numbers)
+//{
+//    int limit = 0;
+//    int res = 0;
+//    foreach (int number in numbers)
+//    {
+//        if (IsPassed(number, limit)) res += number;
+//    }
+//    return res;
+//    static bool IsPassed(int number, int lim)
+//    {
+//        return number > lim;
+//    }
+//}
+//int[] numbers1 = [1, 2, 3];
+//int[] numbers2 = [4, 5, 6];
+//Console.WriteLine(Sum(numbers1));2
+//Console.WriteLine(Sum(numbers2)); 
 
